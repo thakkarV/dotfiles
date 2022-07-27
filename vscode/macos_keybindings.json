@@ -1,0 +1,199 @@
+[
+    {
+        "key": "ctrl+tab",
+        "command": "workbench.action.nextEditor"
+    },
+    {
+        "key": "shift+cmd+]",
+        "command": "-workbench.action.nextEditor"
+    },
+    {
+        "key": "ctrl+shift+tab",
+        "command": "workbench.action.previousEditor"
+    },
+    {
+        "key": "shift+cmd+[",
+        "command": "-workbench.action.previousEditor"
+    },
+    {
+        "key": "shift+backspace",
+        "command": "moveFileToTrash",
+        "when": "explorerResourceMoveableToTrash && explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus"
+    },
+    {
+        "key": "cmd+backspace",
+        "command": "-moveFileToTrash",
+        "when": "explorerResourceMoveableToTrash && explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus"
+    },
+    {
+        "key": "backspace",
+        "command": "renameFile",
+        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+    },
+    {
+        "key": "enter",
+        "command": "-renameFile",
+        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+    },
+    {
+        "key": "ctrl+v w",
+        "command": "editor.action.toggleWordWrap"
+    },
+    {
+        "key": "alt+z",
+        "command": "-editor.action.toggleWordWrap"
+    },
+    {
+        "key": "cmd+k p",
+        "command": "workbench.action.pinEditor",
+        "when": "!activeEditorIsPinned"
+    },
+    {
+        "key": "cmd+k shift+enter",
+        "command": "-workbench.action.pinEditor",
+        "when": "!activeEditorIsPinned"
+    },
+    {
+        "key": "cmd+k p",
+        "command": "workbench.action.unpinEditor",
+        "when": "activeEditorIsPinned"
+    },
+    {
+        "key": "cmd+k shift+enter",
+        "command": "-workbench.action.unpinEditor",
+        "when": "activeEditorIsPinned"
+    },
+    {
+      "key": "shift+cmd+h",
+      "command": "workbench.action.replaceInFiles"
+    },
+    {
+      "key": "shift+cmd+h",
+      "command": "-workbench.action.replaceInFiles"
+    },
+    {
+      "key": "cmd+h",
+      "command": "editor.action.startFindReplaceAction",
+      "when": "editorFocus || editorIsOpen"
+    },
+    {
+      "key": "alt+cmd+f",
+      "command": "-editor.action.startFindReplaceAction",
+      "when": "editorFocus || editorIsOpen"
+    },
+    {
+      "key": "ctrl+shift+f",
+      "command": "editor.action.formatDocument",
+      "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
+    },
+    {
+      "key": "shift+alt+f",
+      "command": "-editor.action.formatDocument",
+      "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
+    },
+    {
+      "key": "ctrl+shift+f",
+      "command": "editor.action.formatDocument.none",
+      "when": "editorTextFocus && !editorHasDocumentFormattingProvider && !editorReadonly"
+    },
+    {
+      "key": "shift+alt+f",
+      "command": "-editor.action.formatDocument.none",
+      "when": "editorTextFocus && !editorHasDocumentFormattingProvider && !editorReadonly"
+    },
+    {
+      "key": "ctrl+c",
+      "command": "editor.action.clipboardCopyAction"
+    },
+    {
+      "key": "cmd+c",
+      "command": "-editor.action.clipboardCopyAction"
+    },
+    {
+      "key": "ctrl+cmd+up",
+      "command": "editor.action.insertCursorAbove",
+      "when": "editorTextFocus"
+    },
+    {
+      "key": "alt+cmd+up",
+      "command": "-editor.action.insertCursorAbove",
+      "when": "editorTextFocus"
+    },
+    {
+      "key": "ctrl+cmd+down",
+      "command": "editor.action.insertCursorBelow",
+      "when": "editorTextFocus"
+    },
+    {
+      "key": "alt+cmd+down",
+      "command": "-editor.action.insertCursorBelow",
+      "when": "editorTextFocus"
+    },
+    {
+      "key": "cmd+left",
+      "command": "cursorWordLeft",
+      "when": "textInputFocus"
+    },
+    {
+      "key": "alt+left",
+      "command": "-cursorWordLeft",
+      "when": "textInputFocus"
+    },
+    {
+      "key": "cmd+right",
+      "command": "cursorWordEndRight",
+      "when": "textInputFocus"
+    },
+    {
+      "key": "alt+right",
+      "command": "-cursorWordEndRight",
+      "when": "textInputFocus"
+    },
+    {
+      "key": "shift+cmd+left",
+      "command": "cursorWordLeftSelect",
+      "when": "textInputFocus"
+    },
+    {
+      "key": "shift+alt+left",
+      "command": "-cursorWordLeftSelect",
+      "when": "textInputFocus"
+    },
+    {
+      "key": "ctrl+shift+alt+right",
+      "command": "-cursorWordPartRightSelect",
+      "when": "textInputFocus"
+    },
+    {
+      "key": "shift+cmd+right",
+      "command": "cursorWordRightSelect"
+    },
+    {
+      "key": "cmd+l",
+      "command": "workbench.action.terminal.clear",
+      "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    },
+    {
+      "key": "cmd+k",
+      "command": "-workbench.action.terminal.clear",
+      "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    },
+    {
+      "key": "ctrl+c",
+      "command": "workbench.action.terminal.copySelection",
+      "when": "terminalFocus && terminalHasBeenCreated && terminalTextSelected || terminalFocus && terminalProcessSupported && terminalTextSelected"
+    },
+    {
+      "key": "cmd+c",
+      "command": "-workbench.action.terminal.copySelection",
+      "when": "terminalFocus && terminalHasBeenCreated && terminalTextSelected || terminalFocus && terminalProcessSupported && terminalTextSelected"
+    },
+    {
+      "key": "cmd+y",
+      "command": "redo"
+    },
+    {
+      "key": "shift+cmd+z",
+      "command": "-redo"
+    }
+]
