@@ -17,7 +17,9 @@
                     "conditions": [
                         {
                             "type": "frontmost_application_unless",
-                            "bundle_identifiers": [ "^com\\.apple\\.Terminal" ]
+                            "bundle_identifiers": [
+                                "^com\\.apple\\.Terminal"
+                            ]
                         }
                     ]
                 },
@@ -34,7 +36,9 @@
                     "conditions": [
                         {
                             "type": "frontmost_application_unless",
-                            "bundle_identifiers": [ "^com\\.apple\\.Terminal" ]
+                            "bundle_identifiers": [
+                                "^com\\.apple\\.Terminal"
+                            ]
                         }
                     ]
                 }
