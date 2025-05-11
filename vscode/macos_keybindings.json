@@ -195,5 +195,9 @@
     {
       "key": "shift+cmd+z",
       "command": "-redo"
+    },
+    {
+      "key": "cmd+i",
+      "command": "composerMode.agent"
     }
 ]
